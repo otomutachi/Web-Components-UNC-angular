@@ -1,0 +1,16 @@
+<div class="card">
+
+  <img [src]="avatar" alt="avatar">
+
+  <h3>{{ name }}</h3>
+  <p>{{ bio }}</p>
+
+  <div *ngIf="showActions" class="actions">
+    <button (click)="like()">❤️ Like</button>
+
+    <button (click)="toggleFollow()">
+      {{ isFollowing ? 'Unfollow' : 'Follow' }}
+    </button>
+  </div>
+
+</div>

@@ -1,0 +1,33 @@
+.card{
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 220px;
+  display: inline-block;
+  text-align: center;
+  background: white;
+}
+
+.card img{
+  width: 80px;
+  border-radius: 50%;
+}
+
+.actions{
+  margin-top: 10px;
+}
+
+button{
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover{
+  background: #45a049;
+}

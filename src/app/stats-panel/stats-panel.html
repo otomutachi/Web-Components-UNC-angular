@@ -1,0 +1,19 @@
+<div class="stats">
+
+  <h2>Statistiques</h2>
+
+  <p>Nombre d'utilisateurs : {{ userCount }}</p>
+  <p>Total likes : {{ totalLikes }}</p>
+  <p>Total follows : {{ totalFollows }}</p>
+
+  <h3>Utilisateurs</h3>
+
+  <app-user-card
+    *ngFor="let user of users"
+    [name]="user.name"
+    [bio]="user.bio"
+    [avatar]="user.avatar"
+    [showActions]="false">
+  </app-user-card>
+
+</div>
